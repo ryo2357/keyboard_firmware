@@ -1,6 +1,4 @@
-# AE-RP2040 Rust 開発用テンプレート
-
-[rp-rs/rp2040-project-template](https://github.com/rp-rs/rp2040-project-template)を自分が使いやすいように調整
+# 自作キーボード用のファームウェア
 
 ## usage
 
