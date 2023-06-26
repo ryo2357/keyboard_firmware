@@ -9,8 +9,11 @@ pub const KBDSIZE_LED: usize = 0;
 pub const KBDSIZE_LAYERS: usize = 4;
 
 // レイアウトファイルの指定
-mod sample_layout;
-pub use sample_layout::KEYMAP;
+// mod sample_layout;
+// pub use sample_layout::KEYMAP;
+
+mod ctsc;
+pub use ctsc::KEYMAP;
 
 pub fn set_pins(
     pins: Pins,
