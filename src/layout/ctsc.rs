@@ -27,7 +27,7 @@ const LAYER_1: KeyMapLayer = [
 #[allow(dead_code)]
 #[rustfmt::skip]
 const LAYER_2: KeyMapLayer = [
-    [   TAB,    F1,     F2,     F3,     F4,     NUM_L,  NO_SW,          NO_SW,  PD_PS,  PD_7,   PD_8,   PD_9,   PD_ST,   BACKS,  ],
+    [   TAB,    F1,     F2,     F3,     F4,     NUM_L,  NO_SW,          NO_SW,  PD_PS,  PD_7,   PD_8,   PD_9,   PD_ST,  BACKS,  ],
     [   LCTRL,  F5,     F6,     F7,     F8,     CPS_L,  NO_SW,          NO_SW,  PD_DT,  PD_4,   PD_5,   PD_6,   EQUAL,  ENTER,  ],
     [   LSFT,   F9,     F10,    F11,    F12,    SCR_L,  NO_SW,          NO_SW,  PD_0,   PD_1,   PD_2,   PD_3,   SLASH,  RSFT,   ],
     [   NO_SW,  LGUI,   LALT,   LANG2,  L2,     SPACE,  EMPTY,          EMPTY,  SPACE,  L1,     LANG1,  RALT,   RGUI,   NO_SW,  ],
