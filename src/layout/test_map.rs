@@ -4,7 +4,7 @@
 use crate::keycodes::*;
 use crate::{KeyMap, KeyMapLayer};
 
-pub const KBDSIZE_LAYERS: usize = 4;
+pub const KBDSIZE_LAYERS: usize = 3;
 
 #[allow(dead_code)]
 #[rustfmt::skip]
@@ -12,8 +12,8 @@ const LAYER_0: KeyMapLayer = [
     [   TAB,    Q,      W,      E,      R,      T,      NO_SW,          NO_SW,  Y,      U,      I,      O,      P,      BACKS,  ],
     [   LCTRL,  A,      S,      D,      F,      G,      NO_SW,          NO_SW,  H,      J,      K,      L,      HYPN,   ENTER,  ],
     [   LSFT,   Z,      X,      C,      V,      B,      NO_SW,          NO_SW,  N,      M,      COMMA,  DOT,    SLASH,  RSFT,   ],
-    [   NO_SW,  LGUI,   LALT,   LANG2,  L2,     SPACE,  EMPTY,          EMPTY,  SPACE,  L1,     LANG1,  RALT,   RGUI,   NO_SW,  ],
-    [   NO_SW,  NO_SW,  NO_SW,  NO_SW,  EMPTY,  EMPTY,  EMPTY,          EMPTY,  EMPTY,  EMPTY,  NO_SW,  NO_SW,  NO_SW,  NO_SW,  ],
+    [   NO_SW,  LGUI,   LALT,   LANG2,  L2,     SPACE,  PD_6,           PD_7,   SPACE,  L1,     LANG1,  RALT,   RGUI,   NO_SW,  ],
+    [   NO_SW,  NO_SW,  NO_SW,  NO_SW,  PD_0,   PD_1,   PD_2,           PD_3,   PD_4,   PD_5,   NO_SW,  NO_SW,  NO_SW,  NO_SW,  ],
 ];
 
 #[allow(dead_code)]
@@ -36,13 +36,4 @@ const LAYER_2: KeyMapLayer = [
     [   NO_SW,  NO_SW,  NO_SW,  NO_SW,  EMPTY,  EMPTY,  EMPTY,          EMPTY,  EMPTY,  EMPTY,  NO_SW,  NO_SW,  NO_SW,  NO_SW,  ],
 ];
 
-#[allow(dead_code)]
-#[rustfmt::skip]
-const LAYER_3: KeyMapLayer = [
-    [   EMPTY,  EMPTY,  EMPTY,  EMPTY,  EMPTY,  EMPTY,  NO_SW,          NO_SW,  EMPTY,  EMPTY,  EMPTY,  EMPTY,  EMPTY,  EMPTY,  ],
-    [   EMPTY,  EMPTY,  EMPTY,  EMPTY,  EMPTY,  EMPTY,  NO_SW,          NO_SW,  EMPTY,  EMPTY,  EMPTY,  EMPTY,  EMPTY,  EMPTY,  ],
-    [   EMPTY,  EMPTY,  EMPTY,  EMPTY,  EMPTY,  EMPTY,  NO_SW,          NO_SW,  EMPTY,  EMPTY,  EMPTY,  EMPTY,  EMPTY,  EMPTY,  ],
-    [   NO_SW,  EMPTY,  EMPTY,  EMPTY,  EMPTY,  EMPTY,  EMPTY,          EMPTY,  EMPTY,  EMPTY,  EMPTY,  EMPTY,  EMPTY,  NO_SW,  ],
-    [   NO_SW,  NO_SW,  NO_SW,  NO_SW,  EMPTY,  EMPTY,  EMPTY,          EMPTY,  EMPTY,  EMPTY,  NO_SW,  NO_SW,  NO_SW,  NO_SW,  ],
-];
-pub const KEYMAP: KeyMap = [LAYER_0, LAYER_1, LAYER_2, LAYER_3];
+pub const KEYMAP: KeyMap = [LAYER_0, LAYER_1, LAYER_2];

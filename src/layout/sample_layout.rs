@@ -1,6 +1,8 @@
 use crate::keycodes::*;
 use crate::{KeyMap, KeyMapLayer};
 
+pub const KBDSIZE_LAYERS: usize = 4;
+
 #[allow(dead_code)]
 #[rustfmt::skip]
 const LAYER_0: KeyMapLayer = [

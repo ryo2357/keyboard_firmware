@@ -6,14 +6,15 @@ pub const KBDSIZE_ROWS: usize = 5;
 pub const KBDSIZE_COLS: usize = 14;
 pub const KBDSIZE_LED: usize = 0;
 
-pub const KBDSIZE_LAYERS: usize = 4;
-
 // レイアウトファイルの指定
 // mod sample_layout;
-// pub use sample_layout::KEYMAP;
+// pub use sample_layout::{KBDSIZE_LAYERS, KEYMAP};
 
-mod ctsc;
-pub use ctsc::KEYMAP;
+// mod ctsc;
+// pub use ctsc::{KBDSIZE_LAYERS, KEYMAP};
+
+mod test_map;
+pub use test_map::{KBDSIZE_LAYERS, KEYMAP};
 
 pub fn set_pins(
     pins: Pins,
@@ -39,13 +40,13 @@ pub fn set_pins(
         pins.gpio11.into_pull_up_input().into(),
         pins.gpio12.into_pull_up_input().into(),
         // 右手側
-        pins.gpio24.into_pull_up_input().into(),
-        pins.gpio23.into_pull_up_input().into(),
-        pins.gpio22.into_pull_up_input().into(),
-        pins.gpio21.into_pull_up_input().into(),
-        pins.gpio20.into_pull_up_input().into(),
-        pins.gpio19.into_pull_up_input().into(),
         pins.gpio18.into_pull_up_input().into(),
+        pins.gpio19.into_pull_up_input().into(),
+        pins.gpio20.into_pull_up_input().into(),
+        pins.gpio21.into_pull_up_input().into(),
+        pins.gpio22.into_pull_up_input().into(),
+        pins.gpio23.into_pull_up_input().into(),
+        pins.gpio24.into_pull_up_input().into(),
     ];
     // let leds = [pins.gpio12.into_push_pull_output().into()];
     let leds = [];
