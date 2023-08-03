@@ -22,3 +22,7 @@ cargo build
 ```power shell
 cargo run
 ```
+
+## LICENSE
+
+GPL-3.0
