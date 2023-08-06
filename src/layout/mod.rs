@@ -16,8 +16,8 @@ pub const KBDSIZE_LED: usize = 0;
 // mod test_map;
 // pub use test_map::{KBDSIZE_LAYERS, KEYMAP};
 
-mod poc_thumb;
-pub use poc_thumb::{KBDSIZE_LAYERS, KEYMAP};
+mod poc_thumb_2;
+pub use poc_thumb_2::{KBDSIZE_LAYERS, KEYMAP};
 
 pub fn set_pins(
     pins: Pins,
