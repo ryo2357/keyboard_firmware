@@ -114,7 +114,8 @@ where
                     pin_row.set_high().unwrap();
                 }
             }
-            (self.delay_ms_fn)(5); // Wait a bit to propagete the voltage
+            (self.delay_ms_fn)(10); // Wait a bit to propagete the voltage
+                                    // チャタリングをここで解消できなか 5⇒10
             for (x, key) in row.iter_mut().enumerate() {
                 *key = self.cols[x].is_low().unwrap();
             }
